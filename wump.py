@@ -7,10 +7,6 @@
 ##
 
 
-# Harris changes: "Modify creature threats; change all user-facing references to 'bats' and 'wumpus' to your chosen terms."
-#  changed 'bat' to 'cat' and 'wumpus' to 'Angry Badger'
-
-
 import random
 
 class WumpusGame(object):
