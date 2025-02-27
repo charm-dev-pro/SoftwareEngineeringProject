@@ -6,6 +6,11 @@
 ## 
 ##
 
+
+# Harris changes: "Modify creature threats; change all user-facing references to 'bats' and 'wumpus' to your chosen terms."
+#  changed 'bat' to 'cat' and 'wumpus' to 'Angry Badger'
+
+
 import random
 
 class WumpusGame(object):
@@ -55,7 +60,7 @@ class WumpusGame(object):
     def populate_cave(self):
         """ Drop player and threats into random rooms in the cave.
         """
-        for threat in ['bat', 'bat', 'pit', 'pit', 'wumpus']:
+        for threat in ['cat', 'cat', 'pit', 'pit', 'wumpus']:
             pos = random.choice(self.get_safe_rooms())
             self.threats[pos] = threat
         self.player_pos = random.choice(self.get_safe_rooms())
@@ -111,7 +116,7 @@ class WumpusGame(object):
     def print_warning(self, threat):
         """ Called when entering a new room. Shows threats in adjacent rooms.
         """
-        if threat == 'bat':
+        if threat == 'cat':
             print("You hear a rustling.")
         elif threat == 'pit':
             print("You feel a cold wind blowing from a nearby cavern.")
@@ -176,13 +181,13 @@ class WumpusGame(object):
         """    
         print("Entering room {}...".format(room_number))
         # Maybe a threat waits in the new room.    
-        if self.threats.get(room_number) == 'bat':
-            # The bat teleports the player to random empty room
-            print("You encounter a bat, it transports you to a random empty room.")
+        if self.threats.get(room_number) == 'cat':
+            # The cat teleports the player to random empty room
+            print("You encounter a cat, it transports you to a random empty room.")
             new_pos = random.choice(self.get_safe_rooms())
             return self.enter_room(new_pos)
         elif self.threats.get(room_number) == 'wumpus':
-            print("Wumpus eats you.")
+            print("Angry Badger eats you.")
             return -1
         elif self.threats.get(room_number) == 'pit':
             print("You fall into a pit.")
@@ -203,13 +208,13 @@ class WumpusGame(object):
         # Fire an arrow and see if something is hit by it.
         self.arrows -= 1
         threat = self.threats.get(room_number)
-        if threat in ['bat', 'wumpus']:
+        if threat in ['cat', 'wumpus']:
             del self.threats[room_number]        
             if threat == 'wumpus':
-                print("Hurra, you killed the wumpus!")
+                print("Hurra, you killed the Angry Badger!")
                 return -1
-            elif threat == 'bat':
-                print("You killed a bat.")
+            elif threat == 'cat':
+                print("You killed a cat.")
         elif threat in ['pit', None]:
             print("This arrow is lost.")
         
@@ -228,7 +233,7 @@ class WumpusGame(object):
             del self.threats[room_number]
             self.threats[new_pos] = 'wumpus'            
             if new_pos == self.player_pos: # Wumpus entered players room.
-                print("Wumpus enters your room and eats you!")
+                print("Angry Badger enters your room and eats you!")
                 return -1
 
         return self.player_pos
@@ -236,7 +241,7 @@ class WumpusGame(object):
         
     def gameloop(self):
 
-        print("HUNT THE WUMPUS")
+        print("HUNT THE Angry Badger")
         print("===============")
         print()
         self.populate_cave()
