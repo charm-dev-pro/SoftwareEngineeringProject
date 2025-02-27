@@ -112,11 +112,11 @@ class WumpusGame(object):
         """ Called when entering a new room. Shows threats in adjacent rooms.
         """
         if threat == 'bat':
-            print("You hear a rustling.")
+            print("You hear a rustling from a bat.")
         elif threat == 'pit':
-            print("You feel a cold wind blowing from a nearby cavern.")
+            print("You feel a cold wind blowing from a nearby cavern due to a cave.")
         elif threat == 'wumpus':
-            print("You smell something terrible nearby.")
+            print("You smell something terrible nearby ITS THE WUMP.")
 
 
     def get_players_input(self):
