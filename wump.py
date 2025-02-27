@@ -27,15 +27,18 @@ class WumpusGame(object):
                 6: [2,7,12], 7: [3,6,13], 8: [3,10,14], 9: [4,5,15], 10: [4,8,16], 
                 11: [5,12,17], 12: [6,11,18], 13: [7,14,18], 14: [8,13,19], 
                 15: [9,16,17], 16: [10,15,19], 17: [11,20,15], 18: [12,13,20], 
-                19: [14,16,20], 20: [17,18,19]}
+                19: [14,16,20], 20: [17,18,19], 21: [3,4,5], 22: [6,7,8], 23: [9,10,11],}
 
         self.cave = cave
 
         self.threats = {}
 
+
         self.arrows = 10
 
-        self.arrow_travel_distance = 10        # As in the original game. I don't like this choice:
+        self.arrows = 20
+
+        self.arrow_travel_distance = 20        # As in the original game. I don't like this choice:
                                             # a bow should not cover a whole cave.
         self.player_pos = -1
 
