@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eabc0b2-f6bb-4ead-9bda-7e5839c62139" name="Changes" comment="Changed user messaged">
-      <change afterPath="$PROJECT_DIR$/ChangeLog" afterDir="false" />
+    <list default="true" id="0eabc0b2-f6bb-4ead-9bda-7e5839c62139" name="Changes" comment="Added/updated change log">
+      <change beforePath="$PROJECT_DIR$/ChangeLog" beforeDir="false" afterPath="$PROJECT_DIR$/ChangeLog" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740683283030</updated>
-      <workItem from="1740683284110" duration="2230000" />
+      <workItem from="1740683284110" duration="2427000" />
     </task>
     <task id="LOCAL-00001" summary="Added new rooms">
       <option name="closed" value="true" />
@@ -102,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740684004109</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added/updated change log">
+      <option name="closed" value="true" />
+      <created>1740685554919</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740685554919</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +137,7 @@
     <MESSAGE value="Added new rooms" />
     <MESSAGE value="changed arrows" />
     <MESSAGE value="Changed user messaged" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed user messaged" />
+    <MESSAGE value="Added/updated change log" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added/updated change log" />
   </component>
 </project>
