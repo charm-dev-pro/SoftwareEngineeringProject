@@ -35,9 +35,6 @@ class WumpusGame(object):
 
         self.threats = {}
 
-
-        self.arrows = 10
-
         self.arrows = 20
 
         self.arrow_travel_distance = 20        # As in the original game. I don't like this choice:
