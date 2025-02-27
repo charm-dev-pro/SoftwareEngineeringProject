@@ -6,6 +6,7 @@
 ## 
 ##
 
+# "You definitely don't want to be aquaman' ~Mr. Gold
 
 import random
 
@@ -128,17 +129,20 @@ class WumpusGame(object):
         """
         while 1:                                # Query the action.
 
-            inpt = input("Shoot or move (S-M)? ")
+            inpt = input("Shoot, move, or teleport (S-M-T)? ")
             try:                                # Ensure that the player choses a valid action (shoot or move)
                 mode = str(inpt).lower()
-                assert mode in ['s', 'm', 'q']
+                assert mode in ['s', 'm', 't', 'q']
                 break
             except (ValueError, AssertionError):
-                print("This is not a valid action: pick 'S' to shoot and 'M' to move.")
+                print("This is not a valid action: pick 'S' to shoot, 'M' to move, or 'T' to teleport.")
 
         if mode == 'q':                            # I added a 'quit-button' for convenience.
             return 'q', 0
+        
 
+        
+        
         while 1:                                # Query the target of the action.
 
             inpt = input("Where to? ")
@@ -264,6 +268,8 @@ class WumpusGame(object):
             elif inpt[0] == 's':                # Shoot.
                 target = inpt[1]
                 self.player_pos = self.shoot_room(target)
+            elif input[0] == 't':               # TODO: Teleport
+                self.enter_room = self.player_pos%8
             elif inpt[0] == 'q':                # Quit.
                 self.player_pos = -1
 
