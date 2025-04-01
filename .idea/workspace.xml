@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eabc0b2-f6bb-4ead-9bda-7e5839c62139" name="Changes" comment="updated change log">
-      <change afterPath="$PROJECT_DIR$/calendar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/priority.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChangeLog" beforeDir="false" afterPath="$PROJECT_DIR$/ChangeLog" afterDir="false" />
-    </list>
+    <list default="true" id="0eabc0b2-f6bb-4ead-9bda-7e5839c62139" name="Changes" comment="updated change log" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +156,7 @@
       <workItem from="1740683284110" duration="3536000" />
       <workItem from="1742232272971" duration="8000" />
       <workItem from="1742232399583" duration="14000" />
-      <workItem from="1743466363542" duration="1350000" />
+      <workItem from="1743466363542" duration="1726000" />
     </task>
     <task id="LOCAL-00001" summary="Added new rooms">
       <option name="closed" value="true" />
@@ -213,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740685737101</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated change log">
+      <option name="closed" value="true" />
+      <created>1743467723021</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743467723021</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,10 +242,11 @@
     <MESSAGE value="changed arrows" />
     <MESSAGE value="Changed user messaged" />
     <MESSAGE value="Added/updated change log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added/updated change log" />
+    <MESSAGE value="updated change log" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated change log" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$Project.coverage" NAME="Project Coverage Results" MODIFIED="1743466456650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$PreviousProjectCode_Giselle.coverage" NAME="PreviousProjectCode-Giselle Coverage Results" MODIFIED="1743467263964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
+    <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$PreviousProjectCode_Giselle.coverage" NAME="PreviousProjectCode-Giselle Coverage Results" MODIFIED="1743468091594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
   </component>
 </project>
