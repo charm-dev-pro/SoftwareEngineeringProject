@@ -33,3 +33,11 @@
     Did test to figure out method calling accross .py files
     Testing worked
     Wrote example comments into code for easy reference
+
+2025-04-01 Giselle Johnson <gigiischic@gmail.com>
+    Update the tkinter
+    Added the add portion to add task or event
+    Incorporated database
+    Currently the add functions all work as inteded
+    updated the GUI to include the buttons and fields for add
+

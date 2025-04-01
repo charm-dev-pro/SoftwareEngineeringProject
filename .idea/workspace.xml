@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0eabc0b2-f6bb-4ead-9bda-7e5839c62139" name="Changes" comment="updated change log, added to main skeleton">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project2.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +57,7 @@
     "Python.main.executor": "Run",
     "Python.wump.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -65,6 +67,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GMJohnson\PycharmProjects\SoftwareEngineeringProject" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="PreviousProjectCode-Giselle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineeringProject" />
@@ -185,7 +192,8 @@
       <workItem from="1740683284110" duration="3536000" />
       <workItem from="1742232272971" duration="8000" />
       <workItem from="1742232399583" duration="14000" />
-      <workItem from="1743466363542" duration="5891000" />
+      <workItem from="1743466363542" duration="6432000" />
+      <workItem from="1743508758591" duration="6034000" />
     </task>
     <task id="LOCAL-00001" summary="Added new rooms">
       <option name="closed" value="true" />
@@ -259,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743473854273</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="updated change log, added to main skeleton">
+      <option name="closed" value="true" />
+      <created>1743474670874</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743474670874</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,9 +307,20 @@
     <MESSAGE value="updated change log, added to main skeleton" />
     <option name="LAST_COMMIT_MESSAGE" value="updated change log, added to main skeleton" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$Project.coverage" NAME="Project Coverage Results" MODIFIED="1743466456650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$PreviousProjectCode_Giselle.coverage" NAME="PreviousProjectCode-Giselle Coverage Results" MODIFIED="1743469556145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$main.coverage" NAME="main Coverage Results" MODIFIED="1743474334439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$main.coverage" NAME="main Coverage Results" MODIFIED="1743516608253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
