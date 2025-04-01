@@ -6,6 +6,9 @@ import tkinter
 import tkinter as tk
 import tkinter.messagebox
 
+from calendar import Calendar
+from to_do import To_do
+
 conn = sqlite3.connect('SEProject1.db')
 cur = conn.cursor()
 
@@ -30,7 +33,7 @@ class main:
         self.label = tk.Label(self.main_frame, text='Hello! Please choose one of the options below')
         self.label.grid(row=1)
 
-        #Pack
+        #Pack/view of buttons on window
         self.main_frame.grid()
         self.Add.grid(row=2, column=1)
         self.Remove.grid(row=3, column=1)
@@ -49,22 +52,28 @@ class main:
 
     def add(self):
         #Code to add a task/event
+        pass
 
     def remove(self):
         #Code to remove task/event
+        pass
 
     def edit(self):
         #Code to edit task/event
+        pass
 
     def calendar(self):
         #Code that calls the code from the calendar.py functions
-
+        pass
+        '''Example below of how to call a method from another .py file
+        Calendar.test(self)'''
     def to_do(self):
         #Code that calls the code from the to_do.py functions
+        pass
 
     def priority(self):
         #Code that calls the code from the priority.py functions
-
+        pass
 
 if __name__ == '__main__':
     main()
