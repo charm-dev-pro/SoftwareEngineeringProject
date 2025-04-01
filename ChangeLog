@@ -30,7 +30,7 @@
     Planned next meeting Thursday 1900
 
 2025-03-31 Giselle Johnson <gigiischic@gmail.com>
-    Did test to figure out method calling accross .py files
+    Did test to figure out method calling across .py files
     Testing worked
     Wrote example comments into code for easy reference
 
@@ -38,6 +38,6 @@
     Update the tkinter
     Added the add portion to add task or event
     Incorporated database
-    Currently the add functions all work as inteded
+    Currently the add functions all work as intended
     updated the GUI to include the buttons and fields for add
 
