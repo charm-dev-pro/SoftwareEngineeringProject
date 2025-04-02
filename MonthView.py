@@ -5,16 +5,20 @@ import tkinter
 import tkinter as tk
 import tkinter.messagebox
 
+
 conn = sqlite3.connect('SEProject1.db')
 cur = conn.cursor()
+from tkinter import *
 
 class MonthView():
 
     # CREATE MAIN gui window
     root = tk.Tk()
+
     root.geometry("1200x900")
     root.title("Registration form")
-
+    canvas.create_line(15, 25, 200, 25, width=5)
+    canvas.pack()
     # set gui background color
     root.configure(background="white")
 
