@@ -3,7 +3,7 @@
 '''class Calendar:
     def __init__(self):
 
-        self.test #Initializes the "test" method
+        self.test() #Initializes the "test" method
 
     def test(self): #test method
         print("test")'''

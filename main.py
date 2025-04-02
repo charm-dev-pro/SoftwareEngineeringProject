@@ -78,6 +78,7 @@ class main:
         self.back = tkinter.Button(self.add_window, text = 'Cancel', command=self.add_window.destroy).grid(row=4, column=1)
 
     def task(self):
+        self.add_window.destroy()
         self.task_window = tkinter.Tk()
         self.task_window.title('Task')
         self.task_frame = tkinter.Frame(self.task_window)
@@ -106,6 +107,7 @@ class main:
         self.finish = tkinter.Button(self.task_window, text='Finish', command=self.task_finish). grid(row=5, column=2)
 
     def task_finish(self):
+        self.task_window.destroy()
         # insert into database
         value = 'Task', self.new_task.get(), self.new_details.get(), self.new_priority.get(), self.new_date.get()
         sql = "INSERT INTO Main (TYPE, TASKEVENT, DETAILS, PRIORITY, DATE) VALUES (?,?,?,?,?)"
@@ -114,6 +116,7 @@ class main:
         self.task_window.destroy()
 
     def event(self):
+        self.add_window.destroy()
         self.event_window = tkinter.Tk()
         self.event_window.title('Event')
         self.event_frame = tkinter.Frame(self.event_window)
@@ -143,7 +146,8 @@ class main:
 
     def event_finish(self):
         # insert into database
-        value = 'Event', self.new_event.get(), self.new_event.get(), self.new_event.get(), self.new_event.get()
+        self.event_window.destroy()
+        value = 'Event', self.new_event.get(), self.new_details.get(), self.new_priority.get(), self.new_date.get()
         sql = "INSERT INTO Main (TYPE, TASKEVENT, DETAILS, PRIORITY, DATE) VALUES (?,?,?,?,?)"
         cur.execute(sql, value)
         conn.commit()
@@ -151,7 +155,38 @@ class main:
 
     def remove(self):
         #Code to remove task/event
-        pass
+        self.remove_window = tk.Tk()
+        self.remove_window.title('Remove an event/task')
+
+        self.label_remove = tk.Label(self.remove_window, text='Enter the following information to delete your event/task').grid(row=1, column=1)
+
+        #Labels for required information
+        tk.Label(self.remove_window, text='Enter event/task name').grid(row=2, column=1)
+        tk.Label(self.remove_window, text='Enter date for event (YYYY/MM/DD)').grid(row=3, column=1)
+
+        #Getting required inputs
+        self.name = tk.Entry(self.remove_window)
+        self.name.grid(row=2, column=2)
+
+        self.date = tk.Entry(self.remove_window)
+        self.date.grid(row=3, column=2)
+
+        # Create buttons
+        self.back = tkinter.Button(self.remove_window, text='Back',
+                                   command=self.remove_window.destroy).grid(row=4, column=1)
+        self.remove = tkinter.Button(self.remove_window, text='Remove Cadet',
+                                     command=self.remove_finish).grid(row=4, column=4)
+
+    def remove_finish(self):
+        name = self.name.get()
+        date = self.date.get()
+
+        #Remove from database
+        value = name, date
+        sql = "DELETE from Main where TASKEVENT = ? AND DATE = ?"
+        cur.execute(sql, value)
+        conn.commit()
+        self.remove_window.destroy()
 
     def edit(self):
         #Code to edit task/event
@@ -168,7 +203,32 @@ class main:
 
     def priority(self):
         #Code that calls the code from the priority.py functions
-        pass
+        '''right now this code is just to print what's in the database for testing
+        pruposes. This is not the actual code for this function'''
+        self.roster_window = tkinter.Tk()
+        self.roster_window.title('Database')
+
+        # Create frames
+        self.top_framer = tkinter.Frame(self.roster_window).grid()
+        self.bottom_framer = tkinter.Frame(self.roster_window).grid()
+
+
+        # Get info and write info
+        cur.execute("SELECT * FROM Main")
+        results = cur.fetchall()
+        conn.commit()
+        for row in results:
+            tkinter.Label(self.roster_window, text=f'Type: {row[0]}').grid()
+            tkinter.Label(self.roster_window, text=f'Task/Event Name: {row[1]}').grid()
+            tkinter.Label(self.roster_window, text=f'Details: {row[2]}').grid()
+            tkinter.Label(self.roster_window, text=f'Priority: {row[3]}').grid()
+            tkinter.Label(self.roster_window, text=f'Date: {row[4]}').grid()
+            tkinter.Label(self.roster_window).grid()
+
+        # Create buttons
+        self.done = tkinter.Button(self.roster_window, text='Done',
+                                   command=self.roster_window.destroy).grid(row=2, column=3)
+
 
 if __name__ == '__main__':
     main()

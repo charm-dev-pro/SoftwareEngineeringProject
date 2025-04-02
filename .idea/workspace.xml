@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eabc0b2-f6bb-4ead-9bda-7e5839c62139" name="Changes" comment="updated change log, added to main skeleton">
+    <list default="true" id="0eabc0b2-f6bb-4ead-9bda-7e5839c62139" name="Changes" comment="updated change log, added add task/event code and GUI">
+      <change afterPath="$PROJECT_DIR$/add_taskevent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SoftwareEngineeringProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SoftwareEngineeringProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2.db" beforeDir="false" afterPath="$PROJECT_DIR$/Project2.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calendar.py" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -53,6 +57,7 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Python.PreviousProjectCode-Giselle.executor&quot;: &quot;Run&quot;,
     &quot;Python.Project.executor&quot;: &quot;Run&quot;,
+    &quot;Python.add.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.wump.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -112,6 +117,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="add_taskevent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SoftwareEngineeringProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\GMJohnson\PycharmProjects\SoftwareEngineeringProject\add_taskevent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SoftwareEngineeringProject" />
       <option name="ENV_FILES" value="" />
@@ -161,6 +189,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.add_taskevent" />
         <item itemvalue="Python.PreviousProjectCode-Giselle" />
         <item itemvalue="Python.Project" />
       </list>
@@ -186,6 +215,8 @@
       <workItem from="1742232272971" duration="8000" />
       <workItem from="1742232399583" duration="14000" />
       <workItem from="1743466363542" duration="5891000" />
+      <workItem from="1743560130437" duration="6000" />
+      <workItem from="1743598038639" duration="3274000" />
     </task>
     <task id="LOCAL-00001" summary="Added new rooms">
       <option name="closed" value="true" />
@@ -259,7 +290,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743473854273</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="updated change log, added add task/event code and GUI">
+      <option name="closed" value="true" />
+      <created>1743517029707</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743517029707</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated change log, added add task/event code and GUI">
+      <option name="closed" value="true" />
+      <created>1743517091994</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743517091994</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updated change log, added add task/event code and GUI">
+      <option name="closed" value="true" />
+      <created>1743517285919</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743517285919</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,11 +344,13 @@
     <MESSAGE value="Added/updated change log" />
     <MESSAGE value="updated change log" />
     <MESSAGE value="updated change log, added to main skeleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated change log, added to main skeleton" />
+    <MESSAGE value="updated change log, added add task/event code and GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated change log, added add task/event code and GUI" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$Project.coverage" NAME="Project Coverage Results" MODIFIED="1743466456650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$add.coverage" NAME="add Coverage Results" MODIFIED="1743522780963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$PreviousProjectCode_Giselle.coverage" NAME="PreviousProjectCode-Giselle Coverage Results" MODIFIED="1743469556145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$main.coverage" NAME="main Coverage Results" MODIFIED="1743474334439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SoftwareEngineeringProject$main.coverage" NAME="main Coverage Results" MODIFIED="1743614005787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
