@@ -43,6 +43,13 @@
     Added a sources file
 
 2025-04-02 Giselle Johnson <gigiischic@gmail.com>
-    added the remove function
-    program prints database info in the priorty option. This is just for testing purpoes right now, will  need to change this code later
+    Added the remove function
+    Program prints database info in the priority option. This is just for testing purpose right now, will  need to change this code later
     Updated so previous windows close when new window opens
+
+2025-04-02 Team
+    Met to discuss scope of project
+    Decided to do weekly calendar view, not monthly (no dates just week day names)
+    To-Do is just tasks
+    Priority everything listed by priority in order of date (SQL order by priority, date)
+

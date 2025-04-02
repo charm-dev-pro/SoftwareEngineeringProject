@@ -20,7 +20,7 @@ class main:
         # create main window
         self.main_window = tk.Tk()
         self.main_window.title('Coast Guard Task Manager')
-        self.main_window.geometry('500x500')
+        self.main_window.geometry('300x300')
         self.main_frame = tkinter.Frame(self.main_window)
 
         #Create buttons
@@ -72,12 +72,12 @@ class main:
 
 
         #Options for event or task
-        tk.Radiobutton(self.add_window, text='Add Task',value=1, command=self.task).grid(row=2, column=1)
-        tk.Radiobutton(self.add_window, text='Add Event', value =2,  command=self.event).grid(row=3, column=1)
+        tk.Radiobutton(self.add_window, text='Add Task',value=1, command=self.task_clicked).grid(row=2, column=1)
+        tk.Radiobutton(self.add_window, text='Add Event', value =2,  command=self.event_clicked).grid(row=3, column=1)
 
         self.back = tkinter.Button(self.add_window, text = 'Cancel', command=self.add_window.destroy).grid(row=4, column=1)
 
-    def task(self):
+    def task_clicked(self):
         self.add_window.destroy()
         self.task_window = tkinter.Tk()
         self.task_window.title('Task')
@@ -104,10 +104,10 @@ class main:
         self.back = tkinter.Button(self.task_window, text='Back',
                                    command=self.task_window.destroy).grid(row=5, column=1)
 
-        self.finish = tkinter.Button(self.task_window, text='Finish', command=self.task_finish). grid(row=5, column=2)
+        self.finish = tkinter.Button(self.task_window, text='Finish', command=self.task_finish_clicked). grid(row=5, column=2)
 
-    def task_finish(self):
-        self.task_window.destroy()
+    def task_finish_clicked(self):
+
         # insert into database
         value = 'Task', self.new_task.get(), self.new_details.get(), self.new_priority.get(), self.new_date.get()
         sql = "INSERT INTO Main (TYPE, TASKEVENT, DETAILS, PRIORITY, DATE) VALUES (?,?,?,?,?)"
@@ -115,7 +115,7 @@ class main:
         conn.commit()
         self.task_window.destroy()
 
-    def event(self):
+    def event_clicked(self):
         self.add_window.destroy()
         self.event_window = tkinter.Tk()
         self.event_window.title('Event')
@@ -142,9 +142,9 @@ class main:
         self.back = tkinter.Button(self.event_window, text='Back',
                                    command=self.event_window.destroy).grid(row=5, column=1)
 
-        self.finish = tkinter.Button(self.event_window, text='Finish', command=self.event_finish).grid(row=5, column=2)
+        self.finish = tkinter.Button(self.event_window, text='Finish', command=self.event_finish_clicked).grid(row=5, column=2)
 
-    def event_finish(self):
+    def event_finish_clicked(self):
         # insert into database
         self.event_window.destroy()
         value = 'Event', self.new_event.get(), self.new_details.get(), self.new_priority.get(), self.new_date.get()
@@ -174,10 +174,11 @@ class main:
         # Create buttons
         self.back = tkinter.Button(self.remove_window, text='Back',
                                    command=self.remove_window.destroy).grid(row=4, column=1)
-        self.remove = tkinter.Button(self.remove_window, text='Remove Cadet',
-                                     command=self.remove_finish).grid(row=4, column=4)
+        self.remove = tkinter.Button(self.remove_window, text='Remove Event/Task',
+                                     command=self.remove_clicked).grid(row=4, column=4)
 
-    def remove_finish(self):
+    def remove_clicked(self):
+        #Removes the event/task in the database
         name = self.name.get()
         date = self.date.get()
 
