@@ -20,17 +20,17 @@ class main:
         # create main window
         self.main_window = tk.Tk()
         self.main_window.title('Coast Guard Task Manager')
-        self.main_window.geometry('300x300')
+        self.main_window.geometry('500x500')
         self.main_frame = tkinter.Frame(self.main_window)
 
         #Create buttons
-        self.Add = tk.Button(self.main_frame, text='Add Task/Event', command=self.add)
-        self.Remove = tk.Button(self.main_frame, text='Remove Task/Event', command=self.remove)
-        self.Edit = tk.Button(self.main_frame, text='Edit Task/Event', command=self.edit)
-        self.Calendar = tk.Button(self.main_frame, text='Calendar View', command=self.calendar)
-        self.Todo = tk.Button(self.main_frame, text='To-do View', command=self.to_do)
-        self.Priority = tk.Button(self.main_frame, text='Priority View', command=self.priority)
-        self.Quit = tk.Button(self.main_frame, text='Quit', command=self.quit)
+        self.Add = tk.Button(self.main_frame, text='Add Task/Event', command=self.add, height = 2, width = 15)
+        self.Remove = tk.Button(self.main_frame, text='Remove Task/Event', command=self.remove, height = 2, width = 15)
+        self.Edit = tk.Button(self.main_frame, text='Edit Task/Event', command=self.edit, height = 2, width = 15)
+        self.Calendar = tk.Button(self.main_frame, text='Calendar View', command=self.calendar, height = 2, width = 15)
+        self.Todo = tk.Button(self.main_frame, text='To-do View', command=self.to_do, height = 2, width = 15)
+        self.Priority = tk.Button(self.main_frame, text='Priority View', command=self.priority, height = 2, width = 15)
+        self.Quit = tk.Button(self.main_frame, text='Quit', command=self.quit, height = 2, width = 15)
 
         #Create label
         self.label = tk.Label(self.main_frame, text='Hello! Please choose one of the options below')
@@ -102,7 +102,7 @@ class main:
 
         #Back and finish buttons
         self.back = tkinter.Button(self.task_window, text='Back',
-                                   command=self.task_window.destroy).grid(row=5, column=1)
+                                   command=self.task_window.destroy, command=self.add).grid(row=5, column=1)
 
         self.finish = tkinter.Button(self.task_window, text='Finish', command=self.task_finish_clicked). grid(row=5, column=2)
 
