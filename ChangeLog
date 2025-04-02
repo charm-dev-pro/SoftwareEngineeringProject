@@ -42,3 +42,7 @@
     updated the GUI to include the buttons and fields for add
     Added a sources file
 
+2025-04-02 Giselle Johnson <gigiischic@gmail.com>
+    added the remove function
+    program prints database info in the priorty option. This is just for testing purpoes right now, will  need to change this code later
+    Updated so previous windows close when new window opens
