@@ -27,8 +27,9 @@ class MonthView():
 
     horizontalLine1 = canvas.create_line(0, 50, 1300, 50, width=5)
 #https://www.geeksforgeeks.org/python-tkinter-label/
-    text_var = tk.StringVar()
-    text_var.set("Hello, World!")
+
+    l = Label(root, text="asdf")
+    l.config(padx=20, pady=20, font=("Courier", 28))
 
     #https: // www.geeksforgeeks.org / python - tkinter - scrollbar /
 
@@ -40,5 +41,7 @@ class MonthView():
 # implement a scroll thingy later https://pythonguides.com/python-tkinter-scrollbar/
 
     # run tkinter main loop
+    l.pack()
+
     canvas.pack()
     root.mainloop()
