@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< Updated upstream
-  <component name="dataSourceStorageLocal" created-in="PY-242.24807.21">
-    <data-source name="Project2" uuid="b8c0750e-bda1-4cef-aea7-0e1c8431690c">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" />
-      <auth-provider>no-auth</auth-provider>
-=======
   <component name="dataSourceStorageLocal" created-in="PY-243.26053.29">
     <data-source name="Project2" uuid="b8c0750e-bda1-4cef-aea7-0e1c8431690c">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" />
->>>>>>> Stashed changes
       <schema-mapping />
     </data-source>
   </component>
