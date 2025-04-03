@@ -2,3 +2,4 @@ This is a list of any sources referenced in this project
 
 https://www.w3schools.com/python/python_datetime.asp
 https://stackoverflow.com/questions/46284901/how-do-i-resize-buttons-in-pixels-tkinter
+https://stackoverflow.com/questions/13865009/have-multiple-commands-when-button-is-pressed

@@ -1,5 +1,6 @@
 from datetime import date
 from distutils.dep_util import newer
+from logging import RootLogger
 
 import calendar
 import priority
@@ -102,7 +103,7 @@ class main:
 
         #Back and finish buttons
         self.back = tkinter.Button(self.task_window, text='Back',
-                                   command=self.task_window.destroy, command=self.add).grid(row=5, column=1)
+                                   command=self.task_window.destroy).grid(row=5, column=1)
 
         self.finish = tkinter.Button(self.task_window, text='Finish', command=self.task_finish_clicked). grid(row=5, column=2)
 
@@ -191,6 +192,70 @@ class main:
 
     def edit(self):
         #Code to edit task/event
+        self.edit_window = tk.Tk()
+        self.edit_window.title('Edit an event/task')
+
+        #Lables
+        self.edit_window.label = tkinter.Label(self.edit_window, text='Enter type (event or task)').grid(row=2, column=1)
+        self.edit_window.label = tkinter.Label(self.edit_window, text='Enter the event name').grid(row=3, column=1)
+        self.edit_window.label = tkinter.Label(self.edit_window, text='Enter date (YYYY/MM/DD)').grid(row=4, column=1)
+
+        #Entry windows
+        self.type = tk.Entry(self.edit_window).grid(row=2, column=2)
+        self.event_task = tk.Entry(self.edit_window).grid(row=3, column=2)
+        self.date = tk.Entry(self.edit_window).grid(row=4, column=2)
+
+        #Buttons
+        self.back = tkinter.Button(self.edit_window, text='Back',
+                                   command=self.edit_window.destroy).grid(row=5, column=1)
+        self.edit_ = tkinter.Button(self.edit_window, text='Edit Event/Task',
+                                     command=self.edit_clicked).grid(row=5, column=4)
+
+    def edit_clicked(self):
+        # Create window
+        self.edit_clicked_window = tk.Tk()
+        self.edit_clicked_window.title('Select what you want to change about your event/task')
+
+        # Options for editing task/event
+        tk.Radiobutton(self.edit_clicked_window, text='Type (Event/task)', value=1, command=self.edit_type).grid(row=2, column=1)
+        tk.Radiobutton(self.edit_clicked_window, text='Name', value=2, command=self.edit_name).grid(row=3, column=1)
+        tk.Radiobutton(self.edit_clicked_window, text='Details', value=3, command=self.edit_details).grid(row=4, column=1)
+        tk.Radiobutton(self.edit_clicked_window, text='Priority', value=4, command=self.edit_priority).grid(row=5, column=1)
+        tk.Radiobutton(self.edit_clicked_window, text='Date', value=5, command=self.edit_date).grid(row=6, column=1)
+
+        self.edit_window.destroy()
+
+        #get info from previous screen
+        type = self.type.get()
+        event_task = self.event_task.get()
+        date = self.date.get()
+
+        # Edit from database
+        value = event_task, date, type
+        sql = "SELECT * from Main where TASKEVENT = ? AND DATE = ? AND TYPE = ?"
+        cur.execute(sql, value)
+        result = cur.fetchall()
+        conn.commit()
+        for row in result:
+            Type = row[0]
+            Task_event = row[1]
+            Details = row[2]
+            Priority = row[3]
+            Date = row[4]
+    def edit_type(self):
+        self.Type.get()
+
+
+    def edit_name(self):
+        pass
+
+    def edit_details(self):
+        pass
+
+    def edit_priority(self):
+        pass
+
+    def edit_date(self):
         pass
 
     def calendar(self):
@@ -204,6 +269,7 @@ class main:
 
     def priority(self):
         #Code that calls the code from the priority.py functions
+
         '''right now this code is just to print what's in the database for testing
         pruposes. This is not the actual code for this function'''
         self.roster_window = tkinter.Tk()
