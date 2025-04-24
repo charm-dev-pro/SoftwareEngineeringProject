@@ -1,0 +1,14 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =Set(varMonthSet, DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
+        Set(varFirstDay, DateAdd(varFirstDayOfCurrentMonth, - Weekday(varMonthSet)));
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

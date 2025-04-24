@@ -1,0 +1,24 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_excel",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2025-01-11T10:01:09.7100000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "__PowerAppsId__": "Row id",
+      "Date": "Date",
+      "Details": "Details",
+      "Name": "Name",
+      "Priority": "Priority",
+      "Task_x002f_Event": "Task/Event"
+    },
+    "DatasetName": "b!cFg393x3R0ebIqez2U9KFMbQerbs6K1CmlejbbgfATcMgiWGiI0DRpCxYiXidPON.01XS3AHHDOK23CWDNRRZCLW5TKPYCREYC7",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Tset3",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

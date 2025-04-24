@@ -1,0 +1,90 @@
+{
+  "4972ac9d-a9dd-4a69-937b-2a91c4762cf5": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel",
+      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1718/1.0.1718.3944/excel/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excel",
+      "parameterHints": {
+        "d90650d1-5508-4b7e-8125-d4066f7e82b4": {
+          "value": "fileSource"
+        }
+      },
+      "parameterHintsV2": {
+        "fileSource": {
+          "value": "d90650d1-5508-4b7e-8125-d4066f7e82b4"
+        }
+      }
+    },
+    "datasets": {
+      "b!cFg393x3R0ebIqez2U9KFMbQerbs6K1CmlejbbgfATcMgiWGiI0DRpCxYiXidPON.01XS3AHHDOK23CWDNRRZCLW5TKPYCREYC7": {
+        "dataSources": {
+          "Test4": {
+            "tableName": "Test4"
+          },
+          "Tset3": {
+            "tableName": "Tset3"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Tset3",
+      "Test4"
+    ],
+    "dependencies": {
+      "fileSource": "d90650d1-5508-4b7e-8125-d4066f7e82b4"
+    },
+    "dependents": [],
+    "id": "4972ac9d-a9dd-4a69-937b-2a91c4762cf5"
+  },
+  "ace84e28-65bd-4e97-8646-bc6590ef59eb": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1745/1.0.1745.4169/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://cgacademy.sharepoint.com/sites/CGACalendar": {
+        "dataSources": {
+          "Calendar Data": {
+            "tableName": "d230cfda-b1be-4d6d-88b5-8aad971452bb"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Calendar Data"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ace84e28-65bd-4e97-8646-bc6590ef59eb"
+  },
+  "d90650d1-5508-4b7e-8125-d4066f7e82b4": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1732/1.0.1732.4070/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "4972ac9d-a9dd-4a69-937b-2a91c4762cf5"
+    ],
+    "id": "d90650d1-5508-4b7e-8125-d4066f7e82b4"
+  }
+}
